@@ -1,0 +1,380 @@
+@media (min-width:300px) and (max-width:576px) {
+  div {
+    transition:0.5s;
+  }
+  .petxroblox__nav-main {
+    display: none;
+  }
+  .openburger {
+    display: block;
+  }
+  .browse__welcome {
+    min-height: 150px;
+  }
+  .browse__welcome-text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 25px;
+  }
+  .browse__main {
+    padding: 15px 13px;
+  }
+  .browse_main-text1 {
+    margin-bottom: 8px;
+  }
+  .browse__ref-img {
+    max-width:131px;
+  }
+  .browse__links {
+    padding: 15px 15px 40px;
+    background:none;
+  }
+  .browse__ref-text {
+    margin-top: 20px;
+  }
+  .browse__ref-text {
+    font-size: 24px;
+  }
+  .petxroblox__recent-border {
+    margin-top: 30px;
+  }
+  .petvalues__title {
+    margin: 8px 0 25px 0;
+    font-size:25px;
+  }
+  .petxroblox__petvalues {
+    margin-top: 20px;
+  }
+  .swiper {
+    transition: 0.3s;
+    max-width: 180px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 40px;
+  }
+  .petxroblox__browse {
+    padding-bottom:80px;
+  }
+  .swiper {
+    transition: 0.3s;
+    max-width: 150px;
+  }
+  .sidenavburger a {
+    font-size: 15px;
+    padding: 6px 8px 2px 11px;
+  }
+  .hugepets__info {
+    transition:0.5s;
+    padding: 19px 20px 14px;
+    width:500px;
+  }
+  .hugepets__main-title {
+    font-size: 21px;
+    margin-bottom: 1px;
+  }
+  .hugepets__main-subtitle {
+    font-size: 16px;
+    line-height: 20px;
+   margin-bottom: 35px;
+  }
+  .hugepets__name {
+    font-size:15px;
+  }
+  .custom-btn {
+    font-size:13px;
+  }
+}
+@media (min-width:576px) and (max-width:768px) {
+  div {
+    transition: 0.5s;
+  }
+  .petxroblox__nav-main {
+    display: none;
+  }
+  .openburger {
+    display: block;
+  }
+  .browse__welcome {
+    min-height: 230px;
+  }
+  .browse__welcome-text {
+    font-size: 25px;
+    line-height: 20px;
+    margin-left: 25px;
+  }
+  .browse__main {
+    padding: 15px 20px;
+  }
+  .browse_main-text1 {
+    margin-bottom: 20px;
+  }
+  .browse__links {
+    padding: 15px 15px 69px;
+    background:none;
+  }
+  .browse__ref-text {
+    margin-top: 20px;
+  }
+  .browse__ref-text {
+    font-size: 24px;
+  }
+  .petxroblox__recent-border {
+    margin-top: 30px;
+  }
+  .petvalues__title {
+    margin: 20px 0;
+  }
+  .swiper {
+    transition: 0.3s;
+    max-width: 180px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 10px;
+  }
+  .hugepets__main-subtitle {
+    font-size: 24px;
+    line-height: 25px;
+    margin-bottom: 30px;
+  }
+  .hugepets__main-title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+  .hugepets__main-subtitle {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  .custom-btn {
+    font-size:15px;
+  }
+}
+@media (min-width: 768px) and (max-width:992px) {
+  .dropdown-menu {
+    width: 436px;
+  }
+  .petxroblox__header-main,
+  .browse__ref-text,
+  .browse__main,
+  .browse__links,
+  .petxroblox__recent-border,
+  .browse__welcome,
+  .browse_main-text1,
+  .browse__welcome,
+  .browse_main-text {
+    transition: 0.2s;
+  }
+  .browse__welcome {
+    min-height: 240px;
+  }
+  .browse__welcome-text {
+    font-size: 20px;
+  }
+  .browse_main-text1 {
+    margin-bottom: 20px;
+  }
+  .browse__welcome {
+    min-height: 240px;
+  }
+  .browse__links {
+    padding: 60px 15px 69px;
+  }
+  .browse__main {
+    background: rgba(31, 33, 34, 0.65);
+    padding: 19px 25px 14px;
+  }
+  .browse__ref-block {
+    padding-top:15px;
+  }
+  .browse__ref {
+    height: 195px;
+  }
+  .browse__ref-img {
+    max-width: 115px;
+    height: auto;
+}
+  .browse__ref-text {
+    margin-top: 17px;
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .petxroblox__recent-border {
+    margin-top: 40px;
+  }
+  .petvalues__title {
+    margin-top: 15px;
+    margin-bottom: 55px;
+  }
+  .swiper {
+    transition: 0.3s;
+    max-width: 180px;
+  }
+  .swiper-horizontal>.swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    bottom: 1px;
+  }
+  .hugepets__info {
+    transition: 0.5s;
+    padding: 19px 20px 14px;
+  }
+  .hugepets__name {
+    font-size: 16px;
+  }
+  .hugepets__value, .hugepets__gemvalue, .hugepets__demand, .hugepets__tier, .hugepets__vchange {
+    font-size:13px;
+  }
+}
+@media (min-width: 992px) and (max-width:1200px) {
+  .dropdown-menu {
+    width: 436px;
+  }
+  .petxroblox__header-main,
+  .browse__ref-text,
+  .browse__main,
+  .browse__ref-img {
+    transition: 0.2s;
+  }
+  .browse__main {
+    background: rgba(31, 33, 34, 0.65);
+  }
+  .browse__ref-img {
+    max-width: 150px;
+  }
+  .browse__ref {
+    padding: 19px 8px 14px;
+    height: 260px;
+  }
+  .browse__ref-text {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .petxroblox__recent-border {
+    margin-top: 55px;
+  }
+  .petvalues__title {
+    margin: 40px 0;
+  }
+}
+@media (min-width: 1200px) and (max-width:1366px) {
+  .dropdown-menu {
+    width: 436px;
+  }
+  .petxroblox__header-main,
+  .browse__ref-text,
+  .browse__main,
+  .browse__ref-img {
+    transition: 0.2s;
+  }
+  .browse__ref-img {
+    max-width: 150px;
+  }
+  .browse__ref {
+    padding: 19px 8px 14px;
+    height: 310px;
+  }
+  .browse__ref-text {
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .petxroblox__recent-border {
+    margin-top: 55px;
+  }
+  .petvalues__title {
+    margin: 40px 0;
+  }
+}
+@media (min-width: 992px) and (max-width:1100px) {
+  .hugepets__info {
+    transition:0.5s;
+    padding:19px 5px 14px;
+  }
+  .hugepets__name {
+    transition:0.5s;
+    font-size:17px;
+  }
+}
+@media (min-width:1100px) and (max-width:1366px) {
+  .hugepets__info {
+    transition:0.5s;
+    padding:19px 10px 14px;
+  }
+  .hugepets__name {
+    transition:0.5s;
+    font-size:22px;
+  }
+}
+@media (min-width: 1201px) and (max-width:1400px) {
+  .dropdown-menu {
+    width: 493px;
+  }
+  .browse__ref-text {
+    padding:0 5px;
+  }
+}
+@media (min-width: 1450px ) {
+  .browse__ref  {
+    height:290px;
+  }
+  .browse__ref-text {
+    padding:0 5px;
+  }
+}
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+@media (min-width:300px) and (max-width:768px) {
+  .language__btns {
+    display:flex;
+  }
+}
+@media (min-width:768px)  {
+  .language__btns {
+    display:none;
+  }
+  .browse__main {
+    margin-top:124px;
+  }
+   .hugepets__prices {
+    margin-top:100px;
+  }
+}
+@media (min-width: 1500px) {
+  .browse__ref-img1 {
+    height:155px;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .searchForm {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    z-index:999;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .searchForm {
+    position: fixed;
+    top: 150px;
+    left: 80px;
+    z-index:999;
+  }
+}

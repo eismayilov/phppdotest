@@ -1,0 +1,64 @@
+/* The side navigation menu */
+.sidenavburger {
+  height: 100%; 
+  width: 50%; 
+  position: fixed; 
+  z-index: 99999; 
+  top: 0; 
+  left: 0;
+  background: linear-gradient(95deg, #000000 0%, rgb(5 13 86 / 97%) 98%);
+  overflow-x: hidden; 
+  padding-top: 60px; 
+  transition: 0.5s; 
+  transform: translatex(-100vw);
+}
+.sidenavburger a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  transition: 0.3s;
+}
+.sidenavburger a:hover {
+  color: #f1f1f1;
+}
+.sidenavburger .closebtnburger {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 44px;
+}
+.openburger {
+  font-size:30px;
+  cursor:pointer;
+  position:fixed;
+  left:20px;
+  top:20px;
+  color:#ffff;
+  display:none;
+  z-index:99899;
+}
+
+.sidenavburger a {
+  font-size: 20px;
+}
+.wrapper-link{ 
+  color: #666;display:inline-block; margin:0; 
+}
+
+.wrapper-link:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px #019fb6;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.wrapper-link:hover:after { 
+transform: scaleX(1); 
+}
+
+
+
+
+

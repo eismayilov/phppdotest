@@ -1,0 +1,439 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+
+.hugepets__header-main {
+  background: #1F2122;
+  width: 100%;
+  margin: 0;
+  display:none;
+}
+
+.hugepets__header {
+  max-width: 1440px;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.hugepets__header-wrapper {
+  display: flex;
+}
+
+.hugepets__header-wrapper-item1,
+.hugepets__header-wrapper-item2 {
+  margin-right: 30px;
+}
+
+.hugepets__header-wrapper--item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* header-border */
+
+.hugepets__header-border {
+  margin-top: 13px;
+
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.2);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+
+/* main */
+
+
+.header__main-align {
+  display: flex;
+  align-items: center;
+}
+
+
+.hugepets__header-text {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 49px;
+  color: rgba(255, 255, 255, 0.6);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  text-decoration: underline;
+  text-decoration-color: #fff;
+}
+
+/* hugepets nav */
+
+.hugepets__main {
+  display: contents;
+}
+
+.hugepets__nav-main {
+  padding-top: 80px;
+  padding-top: 40px;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  z-index: 99999;
+  /* background: linear-gradient(180deg, #0c5cc5 0%, #4ca799 100%); */
+  /* background:linear-gradient(359deg, #004197 0%, #015fdb 100%); */
+  /*  background: linear-gradient(359deg, #0a4a9f 0%, #015fdb 100%);
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 13%); */
+  background: #1F2122;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 0;
+}
+
+.logo {
+  max-width: 170px;
+  height: 100%;
+}
+
+
+.hugepets__main-fix {
+  padding-top: 80px;
+  padding-top: 40px;
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  z-index: 99999;
+  background: linear-gradient(359deg, #0a4a9f 0%, #015fdb 100%);
+  box-shadow: 0 0.5rem 0.5rem 0 rgb(0 0 0 / 13%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding-top: 0;
+  transition: 0.5s;
+}
+
+
+
+.hugepets__nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center !important;
+}
+
+.hugepets__nav-item {
+  margin-right: 30px;
+}
+
+.hugepets__nav-item a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+.hugepets__nav a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
+
+/*  */
+.hugepets__header-text,
+.petvalues__title {
+  background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-animation: rainbow 20s ease infinite;
+  animation: rainbow 20s ease infinite;
+  font-size: 40px;
+
+}
+
+@-webkit-keyframes rainbow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+/*  */
+/* hugepets hugepets */
+
+.hugepets__prices {
+  overflow: hidden;
+  background-size:100% 100%;
+  padding-bottom: 10px;
+  background: linear-gradient(240deg, rgb(14 17 31) 13%, rgba(45,76,170,1) 29%, rgba(79,1,5,1) 47%, rgba(11,63,157,1) 83%);
+}
+
+
+
+/* .hugepets__prices {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+} */
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.hugepets__main {
+  background: rgba(31, 33, 34, 0.8);
+  border-radius: 25px;
+  margin-top: 43px;
+  height: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  margin-top: 43px;
+  padding: 61px 120px;
+}
+
+.hugepets__welcome {
+  border-radius: 20px;
+  background-image: url('../img/bg/bg2.png');
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 49px;
+  max-width: 970px;
+  min-height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.hugepets__welcome-text {
+  font-size: 32px;
+  line-height: 39px;
+  color: #FFFFFF;
+  width: 100%;
+  margin-left: 65px;
+}
+
+.hugepets__welcome-text span {
+  color: #EC6090;
+}
+
+.hugepets_main-text1 {
+  margin-bottom: 47px;
+}
+
+/*  */
+.hugepets__main-title {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 50px;
+  margin-bottom: 23px;
+}
+
+.hugepets__main-subtitle {
+  display: flex;
+  justify-content: center;
+  font-size: 34px;
+  line-height: 50px;
+  margin-bottom: 52px;
+}
+
+
+/*  */
+/* links */
+.hugepets__info-main {
+  display: flex;
+  justify-content: center;
+}
+
+.hugepets__links {
+  margin-top: 30px;
+  border-radius: 25px;
+  width: 100%;
+  padding: 10px 10px 69px;
+}
+
+.hugepets__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(0deg, rgb(28 18 18 / 50%), rgba(0, 0, 0, 0.5)), linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgb(0 78 255 / 40%)), rgb(6 36 28 / 70%);
+    box-shadow: 0px 0px 5px 5px rgb(3 185 4 / 52%);
+  border-radius: 20px;
+  padding: 19px 50px 14px;
+  margin-bottom: 30px;
+  border: 1px solid #fff;
+  color: #fff;
+  width:450px;
+  height:420px;
+}
+
+
+.hugepets__info-img {}
+
+.hugepets__info-img img {
+  height: 100%;
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  max-width: 165px;
+}
+
+.hugepets__name {
+  margin-top: 40px;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 29px;
+  margin-bottom: 8px;
+}
+
+/* .golden {
+  color:gold;
+} */
+
+/* petvalues */
+
+
+
+
+
+
+/* hover */
+.footer__contacts-hov a {
+
+  transition: transform .4s ease-in-out;
+}
+
+.footer__contacts-hov a:hover {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: .3s ease-in-out;
+}
+
+
+.hugepets__carousel-sign a,
+.info__right-read a,
+.improve__left-sign a {
+  transition: transform .4s ease-in-out;
+}
+
+.hugepets__carousel-sign a:hover,
+.info__right-read a:hover,
+.improve__left-sign a:hover {
+  transform: scale(1.1);
+  transition: .3s ease-in-out;
+}
+
+
+.hugepets__header-wrapper--item {}
+
+.hugepets__header-wrapper--item:after,
+.features__block2-nav:after,
+.features__block3-nav:after,
+.features__block4-nav:after,
+.features__block5-nav:after,
+.footer__center-privacy:after,
+.footer__center-tos:after {
+  display: block;
+  content: '';
+  border-bottom: solid 1px #019fb6;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+
+}
+
+
+
+.hugepets__header-wrapper--item:hover:after,
+.features__block2-nav:hover:after,
+.features__block3-nav:hover:after,
+.features__block4-nav:hover:after,
+.features__block5-nav:hover:after,
+.footer__center-privacy:hover:after,
+.footer__center-tos:hover:after {
+  transform: scaleX(1);
+}
+
+.hugepets__header-wrapper--item a:hover {
+  color: #fff;
+  transition: 0.5s;
+}
+
+.features__block2-nav a:hover,
+.features__block3-nav a:hover,
+.features__block4-nav a:hover,
+.features__block5-nav a:hover,
+.footer__center-privacy a:hover,
+.footer__center-tos a:hover {
+  color: rgba(255, 255, 255, 0.5);
+  transition: 0.5s;
+}
+
+.hugepets__nav-item a:hover,
+.btn-check:active+.btn-secondary,
+.btn-check:checked+.btn-secondary,
+.btn-secondary.active,
+.btn-secondary:active,
+.show>.btn-secondary.dropdown-toggle:hover {
+  color: #dddddd;
+  transition: 0.3s;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #fff !important;
+}
+
+
+
