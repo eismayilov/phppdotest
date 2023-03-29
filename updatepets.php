@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once('db_connect.php');
 
 // Выполнить запрос на выборку всех продуктов из базы данных
@@ -102,6 +103,7 @@ x value list • psx values • pet sim x values • pet simulator x values">
                       </form>
                     </div>
                   </div>
+                  <!-- Вывод информации о продуктах -->
                   <?php foreach ($products as $product) : ?>
                     <div class="col-md-4">
                       <div class="hugepets__info-main">
@@ -109,7 +111,7 @@ x value list • psx values • pet sim x values • pet simulator x values">
                           <div class="hugepets__info-img hugepets__info-img1"><img src="uploads/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>"> </div>
                           <div class="hugepets__name" id="search-results"><?php echo $product['name']; ?> </div>
                           <div class="hugepets__gemvalue">
-                            <span class="langchange gem" data-key="gemvalue">Gem Value  </span><?php echo $product['gem_value']; ?>
+                            <span class="langchange gem" data-key="gemvalue">Gem Value </span><?php echo $product['gem_value']; ?>
                           </div>
                           <div class="hugepets__demand">
                             <span class="langchange demand" data-key="demand">Demand </span><?php echo $product['demand']; ?>
@@ -117,6 +119,18 @@ x value list • psx values • pet sim x values • pet simulator x values">
                           <div class="hugepets__vchange">
                             <span class="langchange vchange" data-key="vchange">Value Change </span><?php echo $product['value_change']; ?>
                           </div>
+                          <?php
+                          // Вывод ссылки на редактирование, если пользователь авторизован
+                          if (isset($_SESSION['user_id'])) {
+                            echo '<a href="edit_product.php?id=' . $product['id'] . '">Edit</a>';
+                          }
+                          ?>
+                           <?php
+                          // Вывод ссылки на редактирование, если пользователь авторизован
+                          if (isset($_SESSION['user_id'])) {
+                            echo '<a href="delete_product.php?id=' . $product['id'] . '">Delete</a>';
+                          }
+                          ?>
                         </div>
                       </div>
                     </div>
