@@ -24,11 +24,11 @@ if (isset($_POST['logout'])) {
 </head>
 <body>
     <h1>Admin Panel</h1>
-    <p>Welcome, administrator!</p>
+    <p>ф, administrator!</p>
     <form method="POST" action="">
         <button type="submit" name="logout">Logout</button>
     </form>
-    <h2>Add a New Product</h2>
+    <h2>Добавьте файлы</h2>
     <form method="POST" enctype="multipart/form-data">
     <label for="image">Image:</label>
     <input type="file" id="image" name="image">
@@ -45,7 +45,7 @@ if (isset($_POST['logout'])) {
     <label for="value_change">value change:</label>
     <input type="text" id="value_change" name="value_change">
 
-    <button type="submit" name="submit">Add product</button>
+    <button type="submit" name="submit">добавить файлы </button>
     </form>
 
 <?php
@@ -56,7 +56,7 @@ if (isset($_POST['logout'])) {
         $demand = $_POST['demand'];
         $value_change = $_POST['value_change'];
         // Обработка загруженного файла
-          $image = $_FILES['image']['name'];
+        $image = $_FILES['image']['name'];
         $target_dir = "uploads/";
         $target_file = $target_dir . basename($_FILES["image"]["name"]);
         move_uploaded_file($_FILES["image"]["tmp_name"], $target_file);
