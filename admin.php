@@ -64,6 +64,7 @@ if (isset($_POST['logout'])) {
         // Вставка данных в базу данных
         $stmt = $pdo->prepare('INSERT INTO products (name, gem_value, demand, value_change, image) VALUES (:name, :gem_value, :demand, :value_change, :image)');
         $stmt->execute(['name' => $name, 'gem_value' => $gem_value, 'demand' => $demand, 'value_change' => $value_change, 'image' => $image]);
+        header('Location: admin.php');
         echo 'Данные добавлены!';
         exit();
     }
