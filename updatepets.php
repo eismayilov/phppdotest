@@ -109,13 +109,13 @@ x value list • psx values • pet sim x values • pet simulator x values">
                           <div class="hugepets__info-img hugepets__info-img1"><img src="uploads/<?php echo $product['image']; ?>" alt="<?php echo $product['name']; ?>"> </div>
                           <div class="hugepets__name" id="search-results"><?php echo $product['name']; ?> </div>
                           <div class="hugepets__gemvalue">
-                            <span class="langchange gem" data-key="gemvalue">Gem Value </span><?php echo $product['gem_value']; ?> </span>
+                            <span class="langchange gem" data-key="gemvalue">Gem Value  </span><?php echo $product['gem_value']; ?>
                           </div>
                           <div class="hugepets__demand">
-                            <span class="langchange demand" data-key="demand">Demand <?php echo $product['demand']; ?></span>
+                            <span class="langchange demand" data-key="demand">Demand </span><?php echo $product['demand']; ?>
                           </div>
                           <div class="hugepets__vchange">
-                            <span class="langchange vchange" data-key="vchange">Value Change <?php echo $product['value_change']; ?></span>
+                            <span class="langchange vchange" data-key="vchange">Value Change </span><?php echo $product['value_change']; ?>
                           </div>
                         </div>
                       </div>
