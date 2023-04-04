@@ -4,6 +4,10 @@ $dbHost     = "localhost";
 $dbUsername = "vr1tr194_admin";
 $dbPassword = "4415091qwe";
 $dbName     = "vr1tr194_psx";
+/* $dbHost     = "localhost";
+$dbUsername = "root";
+$dbPassword = "";
+$dbName     = "mydatabase"; */
 
 // Create a PDO instance
 try {

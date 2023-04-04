@@ -99,15 +99,11 @@
               </div>
               <ul>
                 <li><a href="huge.html">Huge Pets</a></li>
-                <li><a href="toypets.html">Toy Pets</a></li>
-                <li><a href="excpets.html">Exclusive Pets</a></li>
-                <li><a href="eggpets.html">Exclusive Egg Pets</a></li>
+                <li><a href="exclusive_pets.php">Exclusive Pets</a></li>
                 <li><a href="hardcorepets.html">Hardcore Pets</a></li>
+                <li><a href="updatepets.php">Update Pets</a></li>
                 <li><a href="#">Misc Items</a></li>
                 <li><a href="#">Mythical Pets</a></li>
-                <li><a href="#">Legendary Pets</a></li>
-                <li><a href="#">Pog Pets</a></li>
-                <li><a href="updatepets.php">Update Pets</a></li>
               </ul>
             </div>
           </div>

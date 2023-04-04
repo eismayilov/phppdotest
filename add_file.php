@@ -1,24 +1,3 @@
-<?php
-session_start();
-
-require_once 'config.php';
-require_once 'db_connect.php'; // Подключение к базе данных
-// Проверить, существует ли идентификатор пользователя в сессии
-
-if (!isset($_SESSION['user_id'])) {
-    // Если идентификатора пользователя нет, перенаправить на страницу входа
-    header('Location: login.php');
-    exit();
-}
-
-// Обработка выхода пользователя
-if (isset($_POST['logout'])) {
-    session_destroy(); // Уничтожить все данные сессии
-    header('Location: login.php');
-    exit();
-}
-?>
-
 <!doctype html>
 <html lang="en">
 
@@ -28,14 +7,10 @@ if (isset($_POST['logout'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
-    <link href="assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/fonts/circular-std/style.css">
     <link rel="stylesheet" href="assets/libs/css/style.css">
     <link rel="stylesheet" href="assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
-    <link rel="stylesheet" href="assets/vendor/charts/chartist-bundle/chartist.css">
-    <link rel="stylesheet" href="assets/vendor/charts/morris-bundle/morris.css">
-    <link rel="stylesheet" href="assets/vendor/fonts/material-design-iconic-font/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="assets/vendor/charts/c3charts/c3.css">
-    <link rel="stylesheet" href="assets/vendor/fonts/flag-icon-css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/add_file.css">
     <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
 </head>
 
@@ -49,7 +24,7 @@ if (isset($_POST['logout'])) {
         <!-- ============================================================== -->
         <div class="dashboard-header">
             <nav class="navbar navbar-expand-lg bg-white fixed-top">
-                <a class="navbar-brand" href="admin.php">Concept</a>
+                <a class="navbar-brand" href="/admin.php">Concept</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -179,23 +154,23 @@ if (isset($_POST['logout'])) {
                                 <div id="submenu-1" class="collapse submenu" style="">
                                     <ul class="nav flex-column">
                                         <li class="nav-item">
-                                                <ul class="nav flex-column">
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/add_files/huges_add_file.php">Добавить Хуг петов</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/add_files/exclusive_add_file.php">Добавить Эсклюзивных петов</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/add_files/hardcore_add_file.php">Добавить Хардкор петов</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="/add_files/updated_add_file.php">Добавить петов с Обновы</a>
-                                                    </li>
-                                                    <li class="nav-item">
-                                                        <a class="nav-link" href="ecommerce-product-checkout.html"> # </a>
-                                                    </li>
-                                                </ul>
+                                            <ul class="nav flex-column">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/add_files/huges_add_file.php">Добавить Хуг петов</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/add_files/exclusive_add_file.php">Добавить Эсклюзивных петов</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/add_files/hardcore_add_file.php">Добавить Хардкор петов</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="/add_files/updated_add_file.php">Добавить петов с Обновы</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="ecommerce-product-checkout.html"> # </a>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -337,6 +312,7 @@ if (isset($_POST['logout'])) {
                                         <li class="nav-item">
                                             <a class="nav-link" href="pages/color-picker.html">Color Picker</a>
                                         </li>
+
                                     </ul>
                                 </div>
                             </li>
@@ -443,12 +419,12 @@ if (isset($_POST['logout'])) {
                     <div class="row">
                         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
                             <div class="page-header">
-                                <h2 class="pageheader-title">PetxValues Главная страница </h2>
+                                <h2 class="pageheader-title">PetxValues Страница добавления</h2>
                                 <div class="page-breadcrumb">
                                     <nav aria-label="breadcrumb">
                                         <ol class="breadcrumb">
-                                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Dashboard</a></li>
-                                            <li class="breadcrumb-item active" aria-current="page">PetxValues Dashboard</li>
+                                            <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Добавления питомцев</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">PetxValues Add File page</li>
                                         </ol>
                                     </nav>
                                 </div>
@@ -458,67 +434,78 @@ if (isset($_POST['logout'])) {
                     <!-- ============================================================== -->
                     <!-- end pageheader  -->
                     <!-- ============================================================== -->
-
-                    <div class="ecommerce-widget">
-                        <div class="row">
-                            <div class="col-md-12 col-lg-12 col-sm-12">
-                                <?php include 'main_content.php'; ?>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- ============================================================== -->
-            <!-- footer -->
-            <!-- ============================================================== -->
-            <div class="footer">
-                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
-                        </div>
-                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                            <div class="text-md-right footer-links d-none d-sm-block">
-                                <a href="javascript: void(0);">About</a>
-                                <a href="javascript: void(0);">Support</a>
-                                <a href="javascript: void(0);">Contact Us</a>
+                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="row mb-20">
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <div class="logo"><?php echo '<span style="color:red">' . $title_text . '</span>'; ?></div>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6 flex-end">
+                                    <div class="check-container">
+                                    <?php echo '<span style="color:red">' . $check_page . '</span>'; ?>
+                                    </div>
+                                </div>
                             </div>
+                            <form method="POST" enctype="multipart/form-data">
+                                <label for="image">Фото:</label>
+                                <input type="file" id="image" name="image" autocomplete="off">
+
+                                <label for="name">Имя пета:</label>
+                                <input type="text" id="name" name="name" autocomplete="off">
+
+                                <label for="gem_value">Цена в гемах:</label>
+                                <input type="text" id="gem_value" name="gem_value" autocomplete="off">
+
+                                <label for="demand">Спрос:</label>
+                                <input type="text" id="demand" name="demand" autocomplete="off">
+
+                                <label for="value_change">Цена изменилась:</label>
+                                <input type="text" id="value_change" name="value_change" autocomplete="off">
+
+                                <button type="submit" name="submit">добавить файлы </button>
+                            </form>
                         </div>
                     </div>
+                    <!-- ============================================================== -->
+                    <!-- footer -->
+                    <!-- ============================================================== -->
+                    <!--                     <div class="footer">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    Copyright © 2018 Concept. All rights reserved. Dashboard by <a href="https://colorlib.com/wp/">Colorlib</a>.
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                                    <div class="text-md-right footer-links d-none d-sm-block">
+                                        <a href="javascript: void(0);">About</a>
+                                        <a href="javascript: void(0);">Support</a>
+                                        <a href="javascript: void(0);">Contact Us</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- ============================================================== -->
+                    <!-- end footer -->
+                    <!-- ============================================================== -->
                 </div>
+                <!-- ============================================================== -->
+                <!-- end wrapper  -->
+                <!-- ============================================================== -->
             </div>
-            <!-- ============================================================== -->
-            <!-- end footer -->
-            <!-- ============================================================== -->
         </div>
         <!-- ============================================================== -->
-        <!-- end wrapper  -->
+        <!-- end main wrapper  -->
         <!-- ============================================================== -->
-    </div>
-    <!-- ============================================================== -->
-    <!-- end main wrapper  -->
-    <!-- ============================================================== -->
-    <!-- Optional JavaScript -->
-    <!-- jquery 3.3.1 -->
-    <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <!-- bootstap bundle js -->
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
-    <!-- slimscroll js -->
-    <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
-    <!-- main js -->
-    <script src="assets/libs/js/main-js.js"></script>
-    <!-- chart chartist js -->
-    <script src="assets/vendor/charts/chartist-bundle/chartist.min.js"></script>
-    <!-- sparkline js -->
-    <script src="assets/vendor/charts/sparkline/jquery.sparkline.js"></script>
-    <!-- morris js -->
-    <script src="assets/vendor/charts/morris-bundle/raphael.min.js"></script>
-    <script src="assets/vendor/charts/morris-bundle/morris.js"></script>
-    <!-- chart c3 js -->
-    <script src="assets/vendor/charts/c3charts/c3.min.js"></script>
-    <script src="assets/vendor/charts/c3charts/d3-5.4.0.min.js"></script>
-    <script src="assets/vendor/charts/c3charts/C3chartjs.js"></script>
-    <script src="assets/libs/js/dashboard-ecommerce.js"></script>
+        <!-- Optional JavaScript -->
+        <!-- jquery 3.3.1 -->
+        <script src="assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+        <!-- bootstap bundle js -->
+        <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+        <!-- slimscroll js -->
+        <script src="assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+        <!-- main js -->
+        <script src="assets/libs/js/main-js.js"></script>
 </body>
 
 </html>

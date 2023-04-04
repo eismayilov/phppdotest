@@ -15,7 +15,8 @@ if (isset($_GET['id'])) {
     $stmt = $pdo->prepare('DELETE FROM products WHERE id = :id');
     $stmt->execute(['id' => $id]);
     echo "Продукт с ID $id удален!";
+    echo '<a href="../updatepets.php">Вернуться</a>';
 } else {
     echo "ID продукта не был указан.";
-}
+}  
 ?>

@@ -863,3 +863,56 @@ button {
   justify-content: center;
   margin: 10px 0 10px 0;
 }
+
+/* login logout */
+
+.petxroblox__header-log {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.petxroblox__header-log form button {
+
+  margin:0;
+
+}
+
+.login-btn2,
+.logout-btn2 {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 50px;
+  background-color: #0e308d;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+  box-shadow: 0 5px 0 #020857;
+}
+
+.login-btn2:hover,
+.logout-btn2:hover {
+  background-color: #0e308d;
+  box-shadow: 0 3px 0 #020857;
+}
+
+.logout-btn2 {
+  background-color: #4caf50;
+  box-shadow: 0 5px 0 #3e8e41;
+}
+
+.logout-btn2:hover {
+  background-color: #43a047;
+  box-shadow: 0 3px 0 #3e8e41;
+}
+
+.petxroblox__header-logo .logout-btn {
+  margin: 0;
+}
+
